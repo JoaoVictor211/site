@@ -1,0 +1,36 @@
+{
+  "name": "upinside/fsphp",
+  "description": "Formação Full Stack PHP Developer",
+  "minimum-stability": "stable",
+  "authors": [
+    {
+      "name": "Robson V. Leite",
+      "email": "cursos@upinside.com.br",
+      "homepage": "https://www.upinside.com.br",
+      "role": "Developer"
+    }
+  ],
+  "config": {
+    "vendor-dir": "vendor"
+  },
+  "autoload": {
+    "psr-4": {
+      "Source\\": "source/"
+    },
+    "files": [
+      "source/Boot/Config.php",
+      "source/Boot/Helpers.php",
+      "source/Boot/Minify.php"
+    ]
+  },
+  "require": {
+    "phpmailer/phpmailer": "^6.8.1",
+    "league/plates": "3.*",
+    "coffeecode/uploader": "2.0.*",
+    "coffeecode/cropper": "2.0.*",
+    "coffeecode/paginator": "2.0.*",
+    "coffeecode/optimizer": "2.1.*",
+    "coffeecode/router": "2.0.*",
+    "matthiasmullie/minify": "1.3.71"
+  }
+}
